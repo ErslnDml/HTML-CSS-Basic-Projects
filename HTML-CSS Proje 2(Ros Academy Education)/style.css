@@ -1,0 +1,263 @@
+/* Resetleme İşlemi */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgb(82, 82, 82);
+    font-size: 20px;
+    
+    
+}
+
+/* Navbar Bölümü  */
+nav{
+    overflow: hidden;
+   
+}
+
+nav .logo{
+    width: 30%;
+    float: left;
+    
+}
+nav .logo img{
+    width:30%;
+    padding: 15px 14px ;
+}
+nav .link{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+nav .link a{
+    display: inline;
+    color: gray;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 15px 10px ;
+    
+}
+
+nav .link a:hover{
+    color: rgb(253, 123, 8);
+}
+
+
+/* Genel  ayarlar*/
+.container{
+    width: 75%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    margin-top: 140px;
+}
+.col-25{
+    width: 25%;
+}
+.col-50{
+    width: 50%;
+}
+.col-75{
+    width:75%;
+}
+.col-100{
+    width: 100%;
+}
+.col-25,.col-50,.col-75,.col-100{
+    float: left;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+div{
+    overflow: auto;
+}
+
+.text-content{
+    text-align: center;
+}
+
+
+
+/* Banner */
+.banner{
+    margin-top: 10px;
+}
+.banner h2{
+    margin-top: 100px;
+    
+}
+.banner h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.icons{
+    margin-top: 20px;
+  
+}
+.icon{
+    color: rgb(253, 123, 8);
+    margin-left: 8px;
+    font-size: 35px;
+    text-decoration: none;
+}
+.icon:hover{
+    color: darkblue;
+    transition: 1s;
+}
+.text{
+    margin-bottom:20px ;
+}
+/* Content-1 */
+.text-content1{
+    margin: 0 50px;
+}
+.text-content1 h2{
+    margin-bottom: 10px;
+}
+.btn-content1{
+    margin-top: 30px;
+}
+.content-1 img{
+    margin-top:10px;
+}
+/* Content-2 */
+.content-2{
+    text-align:center;
+}
+.service{
+    border:2px solid rgb(128,128, 128,0.4) ;
+    margin: 20px 10px;
+    padding: 50px 10px;
+    box-shadow: 0px 6px 5px 0px rgba(176, 176, 176, 0.8);
+    color: rgb(253,123,8);
+}
+.service i{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.service:hover{
+    background-color: rgb(253,123,8);
+    color: white;
+    transition: 1s;
+    border: 2px solid rgb(253,123,8);;
+}
+/* Content-3 */
+
+.con-3{
+    padding: 15px;
+}
+/* Content-4 */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.column{
+    flex: 25%;
+    padding: 0 4px;
+}
+.column img{
+    margin-top: 8px;
+}
+/* Form */
+.p1{
+    margin-bottom:25px;
+}
+.form{
+    margin-top: 100px;
+    padding: 10px;
+}
+input{
+    width: 48%;
+    float: left;
+    margin: 1%;
+}
+textarea{
+    width: 100%;
+}
+input,textarea{
+    border:1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+::placeholder{
+    color: rgb(253, 123, 8);
+}
+/* Genel Buton Ayarları */
+button{
+    color: rgb(255, 255, 255);
+    background-color:rgb(253, 123, 8);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+   
+}
+
+button:hover{
+    background-color: rgb(195, 91, 0);
+}
+
+.btn{
+    background-color: rgb(30,30,30);
+}
+.btn:hover{
+    background-color: rgb(103, 203, 180);
+}
+
+
+@media screen and (max-width: 1138px){
+    nav .logo,nav .link{
+        width: 100%;
+        display: block;
+    }
+    nav .link a{
+        display: block;
+        padding: 5px 14px 16px;
+    }
+    nav .link,nav .logo{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    body{
+        font-size: 18px;
+    }
+    .col-25,.col-75{
+        width: 50%;
+    }
+    .text-content1{
+        overflow: auto;
+        height: 400px;
+    }
+    .column{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .col-25,.col-50,.col-75{
+        width: 100%;
+    }
+    .text-content1{
+        height: auto;
+        
+    }
+    .banner{
+        text-align: center;
+    }
+    .column{
+        flex: 100%;
+    }
+    
+}
+
